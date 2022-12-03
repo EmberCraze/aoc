@@ -1,6 +1,6 @@
 (defparameter caloriesums (make-array 1000 :adjustable t :fill-pointer 0))
 (defparameter currcalories 0)
-(let ((stream (open "input-p1d1.txt" :if-does-not-exist nil)))
+(let ((stream (open "input-d1.txt" :if-does-not-exist nil)))
     (when stream
         (loop for line = (read-line stream nil)
             while line do 
